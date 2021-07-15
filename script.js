@@ -50,6 +50,52 @@ startButton.addEventListener("click", function () {
 });
 //End Start button click
 
+//List of quiz questions
+var questions = [
+  {
+    question: "Where do you place your JS script on your HTML?",
+    a: " In the header",
+    b: " In the first div tag",
+    c: " At the end before the end body tag",
+    answer: "C",
+  },
+  {
+    question: "Which built-in method combines the text of two strings and returns a new string?",
+    a: " Append()",
+    b: " Concat()",
+    c: " Attach()",
+    answer: "B",
+  },
+  {
+    question: "What does '===' mean?",
+    a: " Not equal to",
+    b: " Equal to",
+    c: " Divided by",
+    answer: "B",
+  },
+  {
+    question: "Inside which HTML element do you put the JavaScript?",
+    a: " js",
+    b: " script",
+    c: " javascript",
+    answer: "B",
+  },
+  {
+    question: "What are the different ways to define a variable in Javascript?",
+    a: " v1, v2, v3",
+    b: " function()",
+    c: " var, const and let",
+    answer: "C",
+  },
+  {
+    question: "How do you call a function name myFunction?",
+    a: " myFunction",
+    b: " call function myFunction",
+    c: " call myFunction",
+    answer: "A",
+  },
+];
+//End of quiz questions 
 
 function get(x) {
   return document.getElementById(x);
@@ -82,7 +128,7 @@ function getQuestions() {
     "<h2> Your score: " + correct + "/" + questions.length + "</h2>";
 }
 
-// Start to checking answers
+// Start to check answers
 function checkAnswer() {
   for (var i = 0; i < options.length; i++) {
     if (options[i].checked) {
