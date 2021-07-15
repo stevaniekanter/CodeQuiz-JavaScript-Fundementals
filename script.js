@@ -51,7 +51,7 @@ startButton.addEventListener("click", function () {
 //End Start button click
 
 //List of quiz questions
-var questions = [
+let questions = [
   {
     question: "Where do you place your JS script on your HTML?",
     a: " In the header",
