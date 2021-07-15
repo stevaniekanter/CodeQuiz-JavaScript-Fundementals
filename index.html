@@ -4,14 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Your JavaScript Knowledge!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 
     <!--Bootstrap's CSS stylesheet-->
     <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
-    />
+    crossorigin="anonymous"/>
   </head>
+
+  <body>
+    <!--Added a nav bar for highscores link and timer placement-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a id="highscores" class="navbar-brand" href="#">View High Scores</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> </a>
+          </li>
+        </ul>
+        <!--Timer Countdown-->
+        <span class="navbar-text">
+          <h3 class="timer">Timer: 60 seconds</h3>
+        </span>
+      </div>
+    </nav>
+    <br>
+
+    <!--Build a start button and welcome page-->
+    <div class="container card homePage text-center">
+      <div class="card-body">
+        <h1>Hello, Welcome!</h1>
+        <h6 class="introPara">
+          Let's test your Javascript fundamentals knowledge with a short quiz! 
+          You will have five (5) multiple choice questions and sixty (60) seconds to complete
+          the quiz. A wrong answer will deduct 5 seconds off the timer.
+          When the timer reaches 0, the game will be over. You will be able
+          to submit your score onto the high scores board! Let's have fun!
+        </h6>
+        <button type="button" id="start" class="btn btn-success">
+          Start Game
+        </button>
+      </div>
+    </div>
+
+    <!--Present questions-->
+    <div class="container card text-center" id="quiz">
+      <div id="quizStatus">
+        
+      </div>
+    </div>
+
+    <!--Create a form and text input to submit intials and score-->
+    <div class="container card submit-initials">
+      <div class="row">
+        <h3>Game Over!</h3>
+        <h6 class="highscoreInitials">
+          Please submit your initials and email address to be included on our
+          highscores board.
+        </h6>
+        <form>
+          <div class="form-group">
+            <label for="initialsForScore">Initials</label>
+            <input type="name" 
+            class="form-control" 
+            id="initials" 
+            >
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+            >
+            <small id="emailHelp" class="form-text text-muted"
+              >We will never share your email address with anyone else.</small
+            >
+          </div>
+          <button type="submit" class="btn btn-primary submitBut">Submit</button>
+        </form>
+        <br>
+      </div>
+    </div>
+    <br>
+
+    <!-- Bootstrap's JS and jQuery stylesheet-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+    crossorigin="anonymous">
+    </script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
 
