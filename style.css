@@ -2,3 +2,15 @@
   cursor: pointer;
 }
 
+form, h3, .highscoreInitials {
+  text-align: center;
+}
+  
+.form-control {
+  width: 100px
+}
+  
+.introPara {
+  padding-left: 10px;
+  padding-right: 30px;
+}
