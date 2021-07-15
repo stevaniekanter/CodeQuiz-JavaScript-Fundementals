@@ -75,10 +75,10 @@ var questions = [
   },
   {
     question: "Inside which HTML element do you put the JavaScript?",
-    a: " js",
-    b: " script",
+    a: " script",
+    b: " js",
     c: " javascript",
-    answer: "B",
+    answer: "A",
   },
   {
     question: "What are the different ways to define a variable in Javascript?",
